@@ -22,8 +22,8 @@ public class SearchSteps {
     }
 
     @Step
-    public void should_see_book(String keywords) {
+    public void should_see_book(String title) {
         List<String> resultTitles = searchResultsPage.getResultTitles();
-        assertThat(resultTitles, hasItem(keywords));
+        assertThat(resultTitles, hasItem(title));
     }
 }

@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3m11.81s</div>
+<div class="counter">28.677s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,35 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="should_see_related_book"></a>
-<h3 class="failures">should_see_related_book</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expected: a string containing &quot;The Haunting of Hill House&quot;
-     but: was &quot;Tip Produs&quot;
-	at carturesti.steps.SearchSteps.lambda$should_see_book$0(SearchSteps.java:27)
-	at carturesti.steps.SearchSteps.should_see_book(SearchSteps.java:27)
-	at carturesti.search.WhenSearchingForABookTest.should_see_related_book(WhenSearchingForABookTest.java:31)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -100,16 +81,16 @@ Expected: a string containing &quot;The Haunting of Hill House&quot;
 </tr>
 </thead>
 <tr>
-<td class="failures">should_see_related_book</td>
-<td class="failures">3m11.81s</td>
-<td class="failures">failed</td>
+<td class="success">should_see_related_book</td>
+<td class="success">28.677s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:57:28.612 [Test worker] INFO   - 
+<pre>16:06:43.568 [Test worker] INFO   - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -125,8 +106,8 @@ Expected: a string containing &quot;The Haunting of Hill House&quot;
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
 
-15:57:28.660 [Test worker] INFO   - Test Suite Started: When searching for a book test
-15:57:29.454 [Test worker] INFO   - 
+16:06:43.612 [Test worker] INFO   - Test Suite Started: When searching for a book test
+16:06:44.197 [Test worker] INFO   - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -135,33 +116,30 @@ Expected: a string containing &quot;The Haunting of Hill House&quot;
 
 should_see_related_book
 -------------------------------------------------------------------
-15:57:30.096 [Test worker] INFO  n.s.c.w.d.ChromeDriverProvider - Not using automatically driver download
-15:57:30.609 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
-15:57:30.609 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-16:00:41.790 [Test worker] ERROR  - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+16:06:44.728 [Test worker] INFO  n.s.c.w.d.ChromeDriverProvider - Not using automatically driver download
+16:06:45.252 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver
+16:06:45.252 [Test worker] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+16:07:13.587 [Test worker] INFO   - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
 Should see related book
---------------------------------------------------------------------------
-16:00:41.797 [Test worker] DEBUG  - RELATED ISSUES: 
-16:00:41.868 [Test worker] ERROR  -     Test failed at step: Should see book: The Haunting of Hill House
-16:00:41.868 [Test worker] ERROR  -     Expected: a string containing &quot;The Haunting of Hill House&quot; but: was &quot;Tip Produs&quot;
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 38649
+<pre>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 26278
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Oct 31, 2020 3:57:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 31, 2020 4:06:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -174,7 +152,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.3.1</a> at Oct 31, 2020, 4:00:43 PM</p>
+<a href="http://www.gradle.org">Gradle 5.3.1</a> at Oct 31, 2020, 4:07:14 PM</p>
 </div>
 </div>
 </body>

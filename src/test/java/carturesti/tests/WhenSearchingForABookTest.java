@@ -1,4 +1,4 @@
-package carturesti.search;
+package carturesti.tests;
 
 import carturesti.steps.SearchSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;

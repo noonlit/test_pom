@@ -53,3 +53,5 @@ Thumbs.db
 *.lock
 *.bin
 build/tmp/test/jar_extract_6495403653080205321_tmp
+*.bin
+*.lock

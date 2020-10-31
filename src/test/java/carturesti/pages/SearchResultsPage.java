@@ -9,13 +9,13 @@ import java.util.stream.Collectors;
 
 public class SearchResultsPage extends PageObject  {
     @FindBy(tagName = "h5")
-    List<WebElement> listingCards;
+    List<WebElement> titles;
 
     /**
      * @return The titles of the products on the search results page.
      */
     public List<String> getResultTitles() {
-        return listingCards.stream()
+        return titles.stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }

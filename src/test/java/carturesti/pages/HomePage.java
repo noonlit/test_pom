@@ -4,7 +4,6 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 
 import net.thucydides.core.annotations.DefaultUrl;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 @DefaultUrl("https://carturesti.ro/")

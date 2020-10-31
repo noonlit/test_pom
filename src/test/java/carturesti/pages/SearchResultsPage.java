@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class SearchResultsPage extends PageObject  {
-    @FindBy(css="product-grid-container")
+    @FindBy(tagName = "h5")
     List<WebElement> listingCards;
 
     /**

@@ -8,6 +8,8 @@ import net.thucydides.core.webdriver.WebDriverFacade;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.concurrent.TimeUnit;
+
 @RunWith(SerenityRunner.class)
 public class WhenSearchingForABookTest {
     @Managed
@@ -23,6 +25,7 @@ public class WhenSearchingForABookTest {
 
         // When
         client.searches_for_book("the haunting");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         // Then
         client.should_see_book("The Haunting of Hill House");

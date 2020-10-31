@@ -3,9 +3,11 @@ package carturesti.steps;
 import carturesti.pages.HomePage;
 import carturesti.pages.SearchResultsPage;
 import net.thucydides.core.annotations.Step;
-import static org.hamcrest.CoreMatchers.*;
-import static org.hamcrest.MatcherAssert.assertThat;
+
 import java.util.List;
+
+import static org.hamcrest.CoreMatchers.hasItem;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class SearchSteps {
     HomePage homePage;

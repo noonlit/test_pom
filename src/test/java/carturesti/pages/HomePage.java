@@ -1,20 +1,21 @@
 package carturesti.pages;
 
-import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
-
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
 @DefaultUrl("https://carturesti.ro/")
 public class HomePage extends PageObject {
-
-    @FindBy(css = "i[class='material-icons']")
-    WebElement searchButton;
-
+    /**
+     * Searches for the given input.
+     *
+     * @param keywords The input.
+     */
     public void searchFor(String keywords) {
-        $("#search-input").sendKeys(keywords);
-        $("#search-input").sendKeys(Keys.ENTER);
+        WebElementFacade element = $("#search-input");
+
+        element.sendKeys(keywords);
+        element.sendKeys(Keys.ENTER);
     }
 }

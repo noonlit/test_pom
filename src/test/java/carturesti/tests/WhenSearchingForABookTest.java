@@ -3,13 +3,15 @@ package carturesti.tests;
 import carturesti.steps.SearchSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Narrative;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.webdriver.WebDriverFacade;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import java.util.concurrent.TimeUnit;
-
+@Narrative(text={"In order to find a book that fits my needs",
+        "As a customer (bookworm)",
+        "I want to be able to search for books with specific titles"})
 @RunWith(SerenityRunner.class)
 public class WhenSearchingForABookTest {
     @Managed
